@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+/* * {outline: 1px solid orange;} */
+body {
+	line-height: 1.2;
+	font-family: 'Noto Sans TC', sans-serif;
+    background-color: #000;
+    color: #ffffff;
+}
+
+img{
+    max-width:100%;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+	max-width: 1296px;
+	margin: 0 auto;
+    /* padding: 0 10px; */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 160px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #FFFFFF;
+    padding: 20px 10px;
+}
+
+.nav-tab {
+    display: flex;
+    font-size: 16px;
+}
+
+.nav-item a{
+    margin-left: 20px;
+    font-weight: 700;
+    padding: 14px 0;
+}
+
+.nav-tab-div {
+    display: none;
+}
+
+.header-title {
+    font-weight: 900;
+    font-size: 120px;
+    margin-bottom: 40px;
+}
+
+.header-button {
+    padding: 20px 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+    max-width: 162px;
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.grass-group {
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.grass-item-left, 
+.grass-item-middle,
+.grass-item-right {
+    position: relative;
+}
+
+.section2-title-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.title-left {
+    font-weight: 900;
+    font-size: 32px;
+    max-width: 414px;
+}
+
+.title-right {
+    font-weight: 900;
+    font-size: 48px;
+    max-width: 856px;
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 940px;
+    }
+    .nav-tab {
+        display: none;
+    }
+    .nav-tab-div {
+        display: block;
+    }
+    .header-title {
+        font-size: 96px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 740px;
+    }
+    .header {
+        margin-bottom: 120px;
+    }
+    .logo img{
+        height: 24px;
+    }
+    .header-title {
+        font-size: 60px;
+    }
+    .mx-w-110 {
+        max-width: 110px;
+    }
+    .title-left {
+        font-size: 20px;
+    }
+    .title-right {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 376px) {
+    .container {
+        max-width: 351px;
+    }
+    .nav-tab {
+        display: none;
+    }
+    .nav-tab-div {
+        display: block;
+    }
+    .header-title {
+        font-size: 48px;
+    }
+}
